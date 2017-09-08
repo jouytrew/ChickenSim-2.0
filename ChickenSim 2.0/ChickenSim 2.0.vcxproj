@@ -147,7 +147,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="FMoveHistory.cpp" />
     <ClCompile Include="FPrinter.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
