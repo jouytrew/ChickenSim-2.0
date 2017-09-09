@@ -1,8 +1,7 @@
 #pragma once
-#include "FMoveHistory.h"
 
-class FPrinter 
+class FPrinter
 {
 public:
-	void PrintMoveHistory(FMoveHistory::Move[MOVES][PLAYERS]);
+	void PrintMoveHistory(FMoveHistory) const;
 };

@@ -18,15 +18,18 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FMoveHistory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="FPrinter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FPrinter.h">
+    <ClInclude Include="FMoveHistory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="FMoveHistory.h">
+    <ClInclude Include="FPrinter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

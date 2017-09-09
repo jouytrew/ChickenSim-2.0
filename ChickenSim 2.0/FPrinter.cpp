@@ -1,15 +1,31 @@
-#include "FPrinter.h"
-#include <iostream>
+#pragma once
 
-void FPrinter::PrintMoveHistory(FMoveHistory::Move MoveHistory[MOVES][PLAYERS])
+#include <iostream>
+#include "FMoveHistory.h"
+#include "FPrinter.h"
+
+/* General idea of what Print Move History should print
+ *     1 2
+ * -------
+ *   1 C D 
+ *   2 D C
+ * ### ? ?
+ */
+void FPrinter::PrintMoveHistory(FMoveHistory MoveHistory) const
 {
+	// create local copies of both move histories
+	const std::vector<int> P1Moves = MoveHistory.GetP1MoveHist();
+	const std::vector<int> P2Moves = MoveHistory.GetP2MoveHist();
+	std::vector<int>::const_iterator I1 = P1Moves.begin();
+	std::vector<int>::const_iterator I2 = P2Moves.begin();
 
 	std::cout << "    1 2\n-------" << std::endl;
-	for (int i = 0; i < MOVES; i++)
+	for (int i = 0; i < P1Moves.size(); i++)
 	{
-		printf("%3.i %s %s\n", i + 1, MoveHistory[i][P1] ? "D" : "C", MoveHistory[i][P2] ? "D" : "C"); // if the value stored in the array is 0 print C, if 1 print D
-		std::cout << std::endl;
+		printf("%3.i ", i + 1);
+		std::cout << (*I1 ? "C" : "D") << " " << (*I2 ? "C" : "D") << std::endl;
+		I1++; I2++;
 	}
-
-	return;
 }
+
+

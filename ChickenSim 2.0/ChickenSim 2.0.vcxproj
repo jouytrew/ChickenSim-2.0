@@ -147,12 +147,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FMoveHistory.cpp" />
     <ClCompile Include="FPrinter.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FPrinter.h" />
     <ClInclude Include="FMoveHistory.h" />
+    <ClInclude Include="FPrinter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
