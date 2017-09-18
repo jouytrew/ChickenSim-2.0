@@ -3,5 +3,7 @@
 class FPrinter
 {
 public:
-	void PrintMoveHistory(FMoveHistory) const;
+	static void PrintMoveHistory(FMoveHistory);
+private:
+	FPrinter();
 };
